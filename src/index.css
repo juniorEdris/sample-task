@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
 :root {
   --theme-color: rgba(87, 0, 58);
   --light-color: rgba(255, 255, 255);
   --dark-color: rgba(7, 7, 7);
+  --roboto:'Roboto Condensed', sans-serif;
 }
 * {
   margin: 0;
@@ -16,14 +19,15 @@ body {
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
-  font-family: 'SF UI Display', sans-serif;
   color: var(--dark-color);
   position: relative;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--roboto);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+.container-fluid{
+  padding: 0 40px !important;
 }
 a,
 a:hover,
@@ -34,7 +38,8 @@ textarea,
 button:hover,
 button:focus {
   outline: none;
-  text-decoration: none;
+  text-decoration: none !important;
+  color: var(--dark-color) !important;
 }
 
 img {

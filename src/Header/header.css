@@ -1,0 +1,35 @@
+.header{
+    height: 50px;
+    line-height: 50px;
+}
+.header_nav ul,
+.header_btns ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 !important;
+}
+.header_nav ul li:not(:last-child){
+    margin-right: 1.2rem;
+}
+.header_logo a span,
+.header_nav ul li a{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.header_logo {
+    text-align: center;
+}
+.header_logo a span.ex{
+    font-size: 1.2rem;
+}
+.header_btns ul{
+    justify-content: flex-end;
+}
+.header_btns ul li:not(:first-child){
+    margin-left: 1rem;
+}
+.header_btns a i{
+    font-size: 1.4rem;
+}
