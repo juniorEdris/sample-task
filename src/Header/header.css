@@ -2,6 +2,9 @@
     height: 50px;
     line-height: 50px;
 }
+.header_nav{
+    display: none;
+}
 .header_nav ul,
 .header_btns ul{
     display: flex;
@@ -28,8 +31,16 @@
     justify-content: flex-end;
 }
 .header_btns ul li:not(:first-child){
-    margin-left: 1rem;
+    margin-left: 1.8rem;
 }
 .header_btns a i{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+}
+@media (min-width:973px){
+    .ham-burger{
+        display: none;
+    }
+    .header_nav{
+        display: block;
+    }
 }

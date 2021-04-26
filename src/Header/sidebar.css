@@ -1,0 +1,43 @@
+.sidebar_times{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.sidebar_times:hover{
+    color: var(--gray);
+}
+.sidebar_wrapper{
+    background: var(--light);
+    position: absolute;
+    left: -50%;
+    top: 0;
+    z-index: 1000;
+    height: 100%;
+    width: calc(100% - 50%);
+}
+.sidebar_wrapper ul li{
+    text-align: center;
+    /* padding: 0.4rem 0; */
+    border-bottom: 1px solid var(--gray);
+}
+.sidebar_wrapper ul li:hover{
+    background: var(--dark);
+}
+.sidebar_wrapper ul li a{
+    display: block;
+    text-transform: capitalize;
+}
+.sidebar_wrapper ul li a:hover{
+    color: var(--light)!important;
+
+}
+.active_sidebar{
+    left: 0;
+}
+@media (min-width:973px){
+.sidebar_wrapper{
+    display: none;
+}
+}

@@ -1,6 +1,109 @@
+:root{
+    --feature-bg:rgba(46,136,14);
+}
+/* BANNER SECTION CSS */
 .single_banner{
     height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-repeat: no-repeat !important;
+    background-position: left !important;
+}
+.single_banner .banner_body{
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--light-color);
+}
+.banner_body h1{
+    font-weight: 700;
+}
+.banner_body h3{
+    letter-spacing: 10px;
+}
+.banner_body p{
+    text-transform:capitalize;
+}
+.banner_body a{
+    border-radius: 4rem;
+    font-weight: 600;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+/* FEATURE CSS STARTS HERE */
+.feature_wrapper{
+    background: var(--feature-bg);
+}
+.home_container_fluid{
+    width: 100%;
+    padding: 0 60px !important;
+}
+.feature_item{
+    text-transform:capitalize ;
+    text-align: center;
+    padding: 2rem 1rem !important;
+    color: var(--light-color);
+}
+.feature_item span{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.feature_item img{
+    height: 50px;
+    width: 50px;
+}
+/* CATEGORY CSS HERE */
+.section_header{
+    text-align: center;
+    text-transform: capitalize;  
+    padding: 1rem 0;
+}
+.section_header p{
+    font-weight:600;
+    color: var(--gray);
+}
+.single_catgory .category_childs{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: right !important;
+    padding: 2rem 1.4rem;
+    text-transform: capitalize;
+    min-height: 150px;
+}
+.single_catgory .category_childs .show_btn{
+    color: var(--feature-bg) !important;
+    border-bottom:1px solid var(--feature-bg)!important;
+    font-weight:500 ;
+}
+.single_catgory .category_childs .show_btn:hover{
+    color: var(--dark)!important;
+    border-bottom:1px solid var(--dark)!important;
+}
+/* FOOD CSS HERE */
+.single_food {
+    border: 1px solid var(--gray);
+    border-radius: 0.25rem;
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+.single_food div {
+    text-align: center;
+}
+.food_thumb img{
+    height: 150px;
+    min-width: 100%;
+    object-fit: contain;
+}
+.food_name p{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.food_price p i{
+    font-size: 1rem;
+}
+.food_price p{
+    font-size: 1.2rem;
+    color: var(--feature-bg);
+    font-weight: 600;
 }
