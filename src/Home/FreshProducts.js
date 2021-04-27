@@ -65,8 +65,23 @@ const FreshFoods = () => {
                             <div className="food_thumb">
                                 <img src={`./assets/images/products/${food.photo}`} alt={food.name} />
                             </div>
-                            <div className="food_rating">
-                                rating goes here
+                            <div className="food_rating mb-2">
+                                <span className={`rated`}>
+                                <i className="fa fa-star" />
+                                </span>
+                                <span className={`rated`}>
+                                <i className="fa fa-star" />
+                                </span>
+                                <span className={`rated`}>
+                                <i className="fa fa-star" />
+                                </span>
+                                <span className={`rated`}>
+                                <i className="fa fa-star" />
+                                </span>
+                                <span className={`not-rated`}>
+                                <i className="fa fa-star" />
+                                </span>
+
                             </div>
                             <div className="food_name">
                                 <p> {food.name}</p>
